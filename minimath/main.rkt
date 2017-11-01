@@ -4,7 +4,7 @@
 
 (define (read-syntax path port)
   (define parse-tree (parse path (make-tokenizer port path)))
-   (strip-bindings
-     #`(module basic-mod basic/expander #,parse-tree)))
+  (strip-bindings
+   #`(module minimath-mod minimath/expander #,parse-tree)))
 
 (module+ reader (provide read-syntax))

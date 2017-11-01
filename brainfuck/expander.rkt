@@ -7,7 +7,7 @@
 (provide (rename-out [bf-module-begin #%module-begin]))
 
 (define-macro (bf-program OP-OR-LOOP-ARG ...)
-  #`(void OP-OR-LOOP-ARG ...)
+  #'(void OP-OR-LOOP-ARG ...)
 )
 
 (provide bf-program)
